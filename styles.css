@@ -1,0 +1,73 @@
+        body,
+        html {
+            padding: 0;
+            margin: 0;
+            background-color: #000;
+        }
+
+        .patient-feedback-form {
+            margin-left: auto;
+            margin-right: auto;
+            width: 500px;
+            border: 1px solid #000;
+            padding: 15px 15px;
+            background-color: rgb(249, 250, 216);
+        }
+
+        .label-for-input {
+            display: block;
+            margin: 20px 0 5px 0;
+            font-weight: bold;
+        }
+
+        .patient-feedback-form h1 {
+            font-size: 40px;
+            margin: 20px 0 0 0;
+            text-align: center;
+        }
+
+        .description {
+            margin: 0;
+        }
+
+        .patient-feedback-form p {
+            margin-top: 10px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .patient-feedback-form input {
+            border-radius: 5px;
+            padding: 10px 10px;
+        }
+
+        .patient-feedback-form input:focus {
+            border: 1px solid #000;
+        }
+
+        .patient-feedback-form select:focus {
+            border: 1px solid black
+        }
+
+        .patient-feedback-form textarea:focus {
+            border: 1px solid #000;
+        }
+
+        .patient-feedback-form button {
+            background-color: rgb(246, 253, 232);
+            border-radius: 5px;
+            border: 1px solid #000;
+            margin: 20px 0;
+            padding: 10px 30px;
+            font-size: 18px;
+        }
+
+
+        .patient-feedback-form button:hover {
+            background-color: rgb(223, 238, 194);
+        }
+
+        main {
+            font-family: "poppins", "sans-serif";
+        }

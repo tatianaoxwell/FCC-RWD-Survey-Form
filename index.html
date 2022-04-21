@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" name="viewport" width="device-width" initial-size="1" />
+    <title>Patient Feedback Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<main>
+    <div class="patient-feedback-form">
+        <h1 id="title">Patient Feedback Form</h1>
+        <p id="description" class="description">
+            Thank you for taking the time to help us improve the Health Service
+        </p>
+        <hr />
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name" class="label-for-input">Name</label>
+                <input type="text" id="name" class="form-control" name="field-name" placeholder="Enter your name"
+                    required />
+            </div>
+
+            <div class="form-group">
+                <label id="email-label" for="email" class="label-for-input">Email</label>
+                <input type="email" id="email" class="form-control" name="field-email"
+                    placeholder="Enter your email address" required />
+            </div>
+
+            <div class="form-group">
+                <label id="number-label" for="number" class="label-for-input">Age (Optional)</label>
+                <input type="number" id="number" class="form-control" name="age" placeholder="Age" min="10" max="99" />
+            </div>
+            <div class="form-group">
+                <label class="label-for-input" class="label-for-input">Gender (Optional)</label>
+                <div><label id="female-label" for="female">
+                        <input type="radio" id="female" class="form-control" name="female-male-other"
+                            value="female" />Female</label></div>
+                <div><label id="male-label" for="male"><input type="radio" id="male" class="form-control"
+                            name="female-male-other" value="male" />Male</label></div>
+                <div><label id="gender-label" for="other"><input type="radio" id="other" class="form-control"
+                            name="female-male-other" value="other" />Other</label></div>
+            </div>
+            <div class="form-group">
+                <label class="label-for-input">
+                    Which services did you use at our facility? (Check all that apply)
+                </label>
+
+                <div><label id="service-label" for="acute-medical"><input type="checkbox" id="acute-medical"
+                            class="form-control" name="service" value="acute-medical" />Acute Medical</label></div>
+                <div><label id="service-label" for="surgical"><input type="checkbox" id="surgical" class="form-control"
+                            name="service" value="surgical" />Surgical</label></div>
+                <div><label id="service-label" for="mental-health"><input type="checkbox" id="mental-health"
+                            class="form-control" name="service" value="mental-health" />Mental Health</label></div>
+
+
+                <div><label id="service-label" for="cancer"><input type="checkbox" id="cancer" class="form-control"
+                            name="service" value="cancer" />Cancer</label></div>
+
+                <div class="form-group">
+                    <label id="service-label" for="rehabilitation"><input type="checkbox" id="rehabilitation"
+                            class="form-control" name="service" value="rehabilitation" />Rehabilitation</label>
+                </div>
+                <div class="form-group">
+                    <label id="service-label" for="allied-health"><input type="checkbox" id="allied-health"
+                            class="form-control" name="service" value="allied-health" />Allied Health</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label id="dropdown-btn" for="overall-satisfaction" class="label-for-input">Overall Satisfaction with
+                    the service</label>
+                <select id="dropdown" name="satisfaction" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="very-satisfied">Very satisfied</option>
+                    <option value="satisfied">Satisfied</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="unsatisfied">Unsatisfied</option>
+                    <option value="very-unsatisfied">Very Unsatisfied</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="label-for-input">How can we improve our service?</label>
+                <textarea name="comments" id="comments" cols="30" rows="10"
+                    style="font-size: 0.8em; font-family: sans-serif"
+                    placeholder="Enter your comment here..."></textarea>
+            </div>
+            <div class="form-group">
+                <button id="submit" form="survey-form" name="survey-form" type="submit">Submit</button>
+            </div>
+        </form>
+
+    </div>
+
+</main>
+
+</html>
